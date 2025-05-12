@@ -2,6 +2,22 @@ from django.core.paginator import EmptyPage, PageNotAnInteger, Paginator
 from django.http import Http404
 from django.shortcuts import render, get_object_or_404
 from blog.models import Post
+from blog.forms import EmailForm
+
+def post_share(request, post_id):
+    post = get_object_or_404(Post,
+                                id=post_id,
+                                status=Post.Status.PUBLISHED)
+    if request.method == "POST":
+        form = EmailForm(request.POST)
+        if form.is_valid():
+            cd = form.cleaned_data
+    else:
+        form = EmailForm()
+    
+    data = {"post": post, "form": form}
+
+    return render(request, 'blog/post/share.html', context=data)
 
 
 def post_list(request):
