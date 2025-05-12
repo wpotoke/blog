@@ -11,8 +11,11 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 """
 
 from pathlib import Path
-
+import os
+from dotenv import load_dotenv
 from django.conf.global_settings import EMAIL_BACKEND, EMAIL_HOST, EMAIL_HOST_PASSWORD, EMAIL_HOST_USER, EMAIL_PORT, EMAIL_USE_TLS
+
+load_dotenv()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -22,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = "django-insecure-e22pl$)paam)p$$-x$sh*5d^6t3)f45vf#j_5(=z#oa8t2q&d7"
+SECRET_KEY = str(os.getenv("SECRET_KEY"))
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -128,8 +131,8 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
 
 # Конфигурация сервера электронной почты
-EMAIL_HOST = "smtp.gmail.com"
-EMAIL_HOST_USER = "morozovdaniel713@gmail.com"
-EMAIL_HOST_PASSWORD = "dqfs qfos alhp qdkc"
-EMAIL_PORT = 587
-EMAIL_USE_TLS = True
+EMAIL_HOST =str(os.getenv("EMAIL_HOST"))
+EMAIL_HOST_USER = str(os.getenv("EMAIL_HOST_USER"))
+EMAIL_HOST_PASSWORD = str(os.getenv("EMAIL_HOST_PASSWORD"))
+EMAIL_PORT = str(os.getenv("EMAIL_PORT"))
+EMAIL_USE_TLS = str(os.getenv("EMAIL_USE_TLS"))
