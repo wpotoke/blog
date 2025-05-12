@@ -1,11 +1,28 @@
-from email import message
 from django.core.paginator import EmptyPage, PageNotAnInteger, Paginator
-from django.http import Http404
 from django.shortcuts import render, get_object_or_404
 from blog.models import Post
 from django.core.mail import send_mail
 from django.conf import settings
-from blog.forms import EmailForm
+from django.views.decorators.http import require_POST
+from blog.forms import CommentForm, EmailForm
+
+
+
+@require_POST
+def post_comment(request, post_id):
+    post = get_object_or_404(Post,
+                                id=post_id,
+                                status=Post.Status.PUBLISHED)
+    comment  = None
+    form = CommentForm(data=request.POST)
+    if form.is_valid():
+        comment = form.save(commit=False)
+        comment.post = post
+        comment.save()
+    data = {"post": post, "form": form, "comment": comment}
+
+    return render(request, "blog/post/comment.html", context=data)
+
 
 def post_share(request, post_id):
     post = get_object_or_404(Post,
