@@ -1,6 +1,7 @@
 from django.core.paginator import EmptyPage, PageNotAnInteger, Paginator
 from django.shortcuts import render, get_object_or_404
 from blog.models import Post
+from taggit.models import Tag
 from django.core.mail import send_mail
 from django.conf import settings
 from django.views.decorators.http import require_POST
@@ -51,9 +52,14 @@ def post_share(request, post_id):
     return render(request, 'blog/post/share.html', context=data)
 
 
-def post_list(request):
+def post_list(request, tag_slug=None):
 
     post_list = Post.published.all()
+
+    tag = None
+    if tag_slug:
+        tag = get_object_or_404(Tag, slug=tag_slug)
+        post_list = Post.objects.filter(tags__in=[tag])
 
     paginator = Paginator(post_list, 3)
     page_number = request.GET.get('page', 1)
@@ -64,7 +70,7 @@ def post_list(request):
     except EmptyPage:
         posts = paginator.page(paginator.num_pages)
 
-    data = {"posts": posts}
+    data = {"posts": posts, "tag": tag}
 
     return render(request, "blog/post/list.html", data)
 
@@ -77,6 +83,7 @@ def post_detail(request, year, month, day, post):
                             publish__year=year,
                             publish__month=month,
                             publish__day=day)
+    
     comments = post.comments.filter(active=True)
     form = CommentForm()
     data = {"post": post, "comments": comments, "form": form}
