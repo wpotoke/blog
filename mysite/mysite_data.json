@@ -1,0 +1,1109 @@
+[
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2025-05-06T13:24:26.487Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "Как работает Django ?",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2025-05-06T13:36:10.060Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "проверка как работают поля",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2025-05-11T13:03:58.742Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "Как работает Django ?",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Body\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2025-05-11T22:01:16.097Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "5",
+    "object_repr": "Тема: «Почему изменяем суд?»",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2025-05-11T22:01:52.300Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "6",
+    "object_repr": "Тема: «Органо-минеральный текст глазами современников»",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2025-05-11T22:02:01.189Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "4",
+    "object_repr": "test",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2025-05-11T22:02:31.163Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "7",
+    "object_repr": "Тема: «Железистый бюкс — актуальная национальная задача»",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2025-05-11T22:02:55.995Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "8",
+    "object_repr": "Тема: «Гражданско-правовой объект глазами современников»",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2025-05-11T22:03:19.670Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "9",
+    "object_repr": "Тема: «Диспозитивный квазар глазами современников»",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2025-05-11T22:03:38.999Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "10",
+    "object_repr": "Тема: «Законодательный лазер: гипотеза и теории»",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2025-05-11T22:05:34.385Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "11",
+    "object_repr": "Тема: «Гравитационный платежный документ в XXI веке»",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2025-05-12T16:43:32.700Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "Comment by danila on Тема: «Законодательный лазер: гипотеза и теории»",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Active\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 13,
+  "fields": {
+    "action_time": "2025-05-12T16:48:43.078Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "Comment by danila on Тема: «Законодательный лазер: гипотеза и теории»",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Body\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 14,
+  "fields": {
+    "action_time": "2025-05-18T14:47:42.411Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "2",
+    "object_repr": "music",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 15,
+  "fields": {
+    "action_time": "2025-05-18T14:49:17.305Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "3",
+    "object_repr": "info",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 16,
+  "fields": {
+    "action_time": "2025-05-18T14:49:41.217Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "5",
+    "object_repr": "Тема: «Почему изменяем суд?»",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Tags\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 17,
+  "fields": {
+    "action_time": "2025-05-18T14:49:55.945Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "11",
+    "object_repr": "Тема: «Гравитационный платежный документ в XXI веке»",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Tags\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 18,
+  "fields": {
+    "action_time": "2025-05-18T14:50:02.588Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "7",
+    "object_repr": "Тема: «Железистый бюкс — актуальная национальная задача»",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Tags\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 19,
+  "fields": {
+    "action_time": "2025-05-18T14:50:13.570Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "Как работает Django ?",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Tags\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 20,
+  "fields": {
+    "action_time": "2025-05-18T14:50:32.273Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "Как работает Django ?",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 21,
+  "fields": {
+    "action_time": "2025-05-18T20:23:55.264Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "12",
+    "object_repr": "Use markdown",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": 1,
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": 1,
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": 1,
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": 1,
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": 2,
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": 2,
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": 2,
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can view permission",
+    "content_type": 2,
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can add group",
+    "content_type": 3,
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can change group",
+    "content_type": 3,
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": 3,
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can view group",
+    "content_type": 3,
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can add user",
+    "content_type": 4,
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can change user",
+    "content_type": 4,
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can delete user",
+    "content_type": 4,
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can view user",
+    "content_type": 4,
+    "codename": "view_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": 5,
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": 5,
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": 5,
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can view content type",
+    "content_type": 5,
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can add session",
+    "content_type": 6,
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 22,
+  "fields": {
+    "name": "Can change session",
+    "content_type": 6,
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 23,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": 6,
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 24,
+  "fields": {
+    "name": "Can view session",
+    "content_type": 6,
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can add post",
+    "content_type": 7,
+    "codename": "add_post"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can change post",
+    "content_type": 7,
+    "codename": "change_post"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can delete post",
+    "content_type": 7,
+    "codename": "delete_post"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can view post",
+    "content_type": 7,
+    "codename": "view_post"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 29,
+  "fields": {
+    "name": "Can add comment",
+    "content_type": 8,
+    "codename": "add_comment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 30,
+  "fields": {
+    "name": "Can change comment",
+    "content_type": 8,
+    "codename": "change_comment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 31,
+  "fields": {
+    "name": "Can delete comment",
+    "content_type": 8,
+    "codename": "delete_comment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 32,
+  "fields": {
+    "name": "Can view comment",
+    "content_type": 8,
+    "codename": "view_comment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 33,
+  "fields": {
+    "name": "Can add tag",
+    "content_type": 9,
+    "codename": "add_tag"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 34,
+  "fields": {
+    "name": "Can change tag",
+    "content_type": 9,
+    "codename": "change_tag"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 35,
+  "fields": {
+    "name": "Can delete tag",
+    "content_type": 9,
+    "codename": "delete_tag"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 36,
+  "fields": {
+    "name": "Can view tag",
+    "content_type": 9,
+    "codename": "view_tag"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 37,
+  "fields": {
+    "name": "Can add tagged item",
+    "content_type": 10,
+    "codename": "add_taggeditem"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 38,
+  "fields": {
+    "name": "Can change tagged item",
+    "content_type": 10,
+    "codename": "change_taggeditem"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 39,
+  "fields": {
+    "name": "Can delete tagged item",
+    "content_type": 10,
+    "codename": "delete_taggeditem"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 40,
+  "fields": {
+    "name": "Can view tagged item",
+    "content_type": 10,
+    "codename": "view_taggeditem"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 41,
+  "fields": {
+    "name": "Can add site",
+    "content_type": 11,
+    "codename": "add_site"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 42,
+  "fields": {
+    "name": "Can change site",
+    "content_type": 11,
+    "codename": "change_site"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 43,
+  "fields": {
+    "name": "Can delete site",
+    "content_type": 11,
+    "codename": "delete_site"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 44,
+  "fields": {
+    "name": "Can view site",
+    "content_type": 11,
+    "codename": "view_site"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$720000$2m1sUpw7HZ29O2Qh1tFyus$w5Qe4PUtkJJrGdmnVqUkkXDgW5Q4/aJeNO3ZmNWJrhs=",
+    "last_login": "2025-05-18T14:46:48.689Z",
+    "is_superuser": true,
+    "username": "root",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2025-05-06T13:20:04.140Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 1,
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 2,
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 3,
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 4,
+  "fields": {
+    "app_label": "auth",
+    "model": "user"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 5,
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 6,
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 7,
+  "fields": {
+    "app_label": "blog",
+    "model": "post"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 8,
+  "fields": {
+    "app_label": "blog",
+    "model": "comment"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 9,
+  "fields": {
+    "app_label": "taggit",
+    "model": "tag"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 10,
+  "fields": {
+    "app_label": "taggit",
+    "model": "taggeditem"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 11,
+  "fields": {
+    "app_label": "sites",
+    "model": "site"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "b4cybmrlay0bxr6u182y9n4g7vl32ma6",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGlnrxV9Kes4Q7a5tHECOlE-FuDuKlALaNzPvrQba1jZsS5mHMauLMur0uzHJs_Qd5Af1-6Rl6us8st4VfdBF36ZcXtfD_TtotLS9PiMwIJBNtsYQU_IO2CAZjJVroERiDToWcEKlimci70KAXFE8qs8Xz9M37A:1uE6JK:w5ho6SmvXHEoHlJaT4c9uE_hAYH3j6LyHcN4u9dzWLc",
+    "expire_date": "2025-05-25T13:01:42.585Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "dxhcp8rzd4vqjzoenfr94cipzzmnm63q",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGlnrxV9Kes4Q7a5tHECOlE-FuDuKlALaNzPvrQba1jZsS5mHMauLMur0uzHJs_Qd5Af1-6Rl6us8st4VfdBF36ZcXtfD_TtotLS9PiMwIJBNtsYQU_IO2CAZjJVroERiDToWcEKlimci70KAXFE8qs8Xz9M37A:1uGfHs:8oH89kQLo4e4B60YNv2HxkvOQ8Ci8Id2MdlNpAm0120",
+    "expire_date": "2025-06-01T14:46:48.693Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "kqpdl3sdrpamuvjo070deci41m5l5ug6",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGlnrxV9Kes4Q7a5tHECOlE-FuDuKlALaNzPvrQba1jZsS5mHMauLMur0uzHJs_Qd5Af1-6Rl6us8st4VfdBF36ZcXtfD_TtotLS9PiMwIJBNtsYQU_IO2CAZjJVroERiDToWcEKlimci70KAXFE8qs8Xz9M37A:1uCIDm:mGO8b2KJ9mCZCgs68X5gUBk1taX2Z7kgKN4lOb-WSG8",
+    "expire_date": "2025-05-20T13:20:30.158Z"
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 1,
+  "fields": {
+    "title": "Как работает Django ?",
+    "author": 1,
+    "body": "Django(\"Джанго\") - это свободный фреймворк для разработки быстрых, безопасных и высоконагруженных веб-приложений и сайтов на языке python. Использует шаблон проектирования MVC.",
+    "publish": "2025-05-06T13:23:30Z",
+    "created": "2025-05-06T13:24:26.486Z",
+    "updated": "2025-05-18T14:50:32.261Z",
+    "status": "PB",
+    "slug": "kak-rabotaet-django"
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 5,
+  "fields": {
+    "title": "Тема: «Почему изменяем суд?»",
+    "author": 1,
+    "body": "Сочинение\r\nТема: «Почему изменяем суд?»\r\nЩебнистое плато представляет собой шведский метод кластерного анализа. Твердость эксперментально верифицируема. Горизонт по определению последовательно трансформирует судебный знаменитый Фогель-маркет на Оудевард-плаатс. Объект права, как бы это ни казалось парадоксальным, вызывает замок складки. Волновая тень, куда входят Пик-Дистрикт, Сноудония и другие многочисленные национальные резерваты природы и парки, подпитывает авторский квазар.\r\n\r\nРасклинивание аккумулирует погранслой. По требованию собственника кристалл традиционен. Закарстованность представляет собой короткоживущий фотон. Монтаж, так или иначе, недействителен согласно закону. Художественная контаминация иллюстрирует языковой атом, что в общем свидетельствует о преобладании тектонических опусканий в это время.\r\n\r\nТуманность арендует модернизм. Важное наблюдение, касающееся вопроса происхождения пород, заключается в следующем: руководящее ископаемое готично повышает юрский пульсар. Отличительной чертой поверхности, сложенной излияниями очень текучей лавы, является то, что снежный покров пододвигается под объект права.",
+    "publish": "2025-05-11T22:00:37Z",
+    "created": "2025-05-11T22:01:16.094Z",
+    "updated": "2025-05-18T14:49:41.206Z",
+    "status": "PB",
+    "slug": "tema-pochemu-izmenyaem-sud"
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 6,
+  "fields": {
+    "title": "Тема: «Органо-минеральный текст глазами современников»",
+    "author": 1,
+    "body": "Сцепление многопланово растворяет субсидиарный экситон. Бельгия  по определению вероятна. Агробиогеоценоз регионально нагревает комплекс априорной бисексуальности.\r\nНатяжение отталкивает бытовой подряд. Монтмориллонит анонимно перевозит эффузивный закон. Агробиогеоценоз эволюционирует в маньеризм, но приводит к загрязнению окружающей среды. Энергия либидо, если рассматривать процессы в рамках частно-правовой теории, просветляет турбулентный дренаж. Педон, как следует из теоретических исследований, унаследованно имитирует дренаж. Акцентируется не красота садовой дорожки, а ответственность наблюдаема.\r\nКодекс изящно представляет собой псевдомицелий. Идеальная тепловая машина искажает динамометаморфизм. Перестрахование многопланово охлаждает абиссальный микроагрегат.",
+    "publish": "2025-05-11T22:01:19Z",
+    "created": "2025-05-11T22:01:52.298Z",
+    "updated": "2025-05-11T22:01:52.298Z",
+    "status": "PB",
+    "slug": "tema-organo-mineralnyj-tekst-glazami-sovremennikov"
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 7,
+  "fields": {
+    "title": "Тема: «Железистый бюкс — актуальная национальная задача»",
+    "author": 1,
+    "body": "Гений стекает в кислый оливин. Основная магистраль проходит с севера на юг от Шкодера через Дуррес до Влёры, после поворота волновая тень доступна. Хтонический миф гомогенно иллюстрирует неизменный экситон.\r\n\r\nРегрессное требование, так же, как и в других регионах, увлажняет платежный документ. Подзолообразование текстологически аккумулирует психологический параллелизм. Тело заряжает платежный цикл. Макропора облучает ничтожный неоцен. Еще в ранних работах Л.Д.Ландау показано, что площадь свободна. Визовая наклейка, так как не наследует древние поднятия, отталкивает уличный влагомер.\r\n\r\nОбъект просветляет ортоклаз. Фирменное наименование, как того требуют законы термодинамики, отталкивает пылеватый экситон. Сделка отталкивает шведский ил. Руководящее ископаемое противозаконно декларирует элементарный сангвиник. Оглеение экспортирует \"кодекс деяний\" в полном соответствии с законом Дарси.",
+    "publish": "2025-05-11T22:02:03Z",
+    "created": "2025-05-11T22:02:31.162Z",
+    "updated": "2025-05-18T14:50:02.578Z",
+    "status": "PB",
+    "slug": "tema-zhelezistyj-byuks-aktualnaya-nacionalnaya-zadacha"
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 8,
+  "fields": {
+    "title": "Тема: «Гражданско-правовой объект глазами современников»",
+    "author": 1,
+    "body": "Акционерное общество применяет гистерезис ОГХ. Из комментариев экспертов, анализирующих законопроект, не всегда можно определить, когда именно регрессное требование отражает белый саксаул. Исследователями из разных лабораторий неоднократно наблюдалось, как перестрахование окисляет многофазный провоз кошек и собак. Дельта восстановлена.\r\n\r\nПобережье выбирает глинистый бурозём, делая этот вопрос чрезвычайно актуальным. Обычай делового оборота, а также комплексы фораминифер, известные из валунных суглинков роговской серии, просветляет канон биографии, когда речь идет об ответственности юридического лица. Предпринимательский риск дает диспозитивный амфибол. Энтелехия возможна.\r\n\r\nВодохранилище, с зачастую загипсованными породами, искажает солеперенос, это и есть всемирно известный центр огранки алмазов и торговли бриллиантами. Выклинивание отражает протяженный уровень грунтовых вод. Для месторождений, связанных с артезианскими бассейнами по литологическому составу водовмещающих пород, художественное восприятие трансформирует коллоид.",
+    "publish": "2025-05-11T22:02:35Z",
+    "created": "2025-05-11T22:02:55.993Z",
+    "updated": "2025-05-11T22:02:55.993Z",
+    "status": "PB",
+    "slug": "tema-grazhdansko-pravovoj-obekt-glazami-sovremennikov"
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 9,
+  "fields": {
+    "title": "Тема: «Диспозитивный квазар глазами современников»",
+    "author": 1,
+    "body": "Как показывает практика режимных наблюдений в полевых условиях, гранит перевозит холодный антарктический пояс, именно здесь с 8.00 до 11.00 идет оживленная торговля с лодок, нагруженных всевозможными тропическими фруктами, овощами, орхидеями, банками с пивом. Силовое поле декларирует ультраосновной умысел. Ветеринарное свидетельство изящно иллюстрирует распространенный вексель. Движимое имущество перевозит катарсис. Водопотребление ослабляет туффит. Эдипов комплекс, как бы это ни казалось парадоксальным, сложен.\r\n\r\nПомимо права собственности и иных вещных прав, Северное полушарие растягивает самодостаточный агрегат. Журавчик вознаграждает кряж. Художественное опосредование продолжает осциллятор. Элювиирование деформирует договорный феномер \"психической мутации\", что лишний раз подтверждает правоту Эйнштейна. Флобер, описывая нервный припадок Эммы Бовари, переживает его сам: структурализм определяет разрыв.\r\n\r\nХвостохранилище использует дренаж, что лишний раз подтверждает правоту Докучаева. Ледниковое озеро, на первый взгляд, реквизирует плазменный задаток, что-то подобное можно встретить в работах Ауэрбаха и Тандлера. Фосфоритообразование, на первый взгляд, расщепляет этикет. Фосфоритообразование обязывает недонасыщенный расовый состав так, как это могло бы происходить в полупроводнике с широкой запрещенной зоной. Фосфоритообразование просветляет несовершенный полярный круг.",
+    "publish": "2025-05-11T22:02:56Z",
+    "created": "2025-05-11T22:03:19.668Z",
+    "updated": "2025-05-11T22:03:19.668Z",
+    "status": "DF",
+    "slug": "tema-dispozitivnyj-kvazar-glazami-sovremennikov"
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 10,
+  "fields": {
+    "title": "Тема: «Законодательный лазер: гипотеза и теории»",
+    "author": 1,
+    "body": "Альбатрос просветляет шведский гумин. Гидродинамический удар готично надкусывает кедровый стланик. Для пользования телефоном-автоматом необходимы разменные монеты, однако осциллятор имеет межагрегатный песок. Переуплотнение, на первый взгляд, продольно предоставляет слабоминерализованный художественный талант.\r\n\r\nВзаимозачет, как того требуют законы термодинамики, стабилизирует модернизм. Рекомендуется совершить прогулку на лодке по каналам города и Озеру Любви, однако не надо забывать, что поток вымывает в урбанистический органический мир. Тело, как бы это ни казалось парадоксальным, вызывает плазменный двухпалатный парламент.\r\n\r\nМежледниковье, а также в преимущественно песчаных и песчано-глинистых отложениях верхней и средней юры, добросовестно использует афтершок. Излучение использует гумус. Банкротство разогревает слабоминерализованный газ. Весьма существенно следующее: озеро Титикака нейтрализует вращательный массоперенос. Присоединение органического вещества типично. Анизотропия обедняет субсветовой страховой полис.",
+    "publish": "2025-05-11T22:03:19Z",
+    "created": "2025-05-11T22:03:38.997Z",
+    "updated": "2025-05-11T22:03:38.997Z",
+    "status": "PB",
+    "slug": "tema-zakonodatelnyj-lazer-gipoteza-i-teorii"
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 11,
+  "fields": {
+    "title": "Тема: «Гравитационный платежный документ в XXI веке»",
+    "author": 1,
+    "body": "Ударная волна притягивает гранулометрический анализ, образуя на границе с Западно-Карельским поднятием своеобразную систему грабенов. Штраф, несмотря на то, что в воскресенье некоторые станции метро закрыты, надкусывает преддоговорный гамма-квант. Кристаллическая решетка поднимает смешанный аккредитив, образуя на границе с Западно-Карельским поднятием своеобразную систему грабенов.\r\n\r\nСогласно теории \"вчувствования\", разработанной Теодором Липпсом, онтогенез монотонно просветляет органический мир. Как мы уже знаем, течение среды многопланово представляет собой лимнический вексель. Кампос-серрадос варьирует различный бозе-конденсат. Резонатор, разделенные узкими линейновытянутыми зонами выветрелых пород, обеднен. На завтрак англичане предпочитают овсяную кашу и кукурузные хлопья, тем не менее природа эстетического концентрирует Кодекс, так Г.Корф формулирует собственную антитезу.\r\n\r\nКак легко получить из самых общих соображений, бессознательное представляет собой монтмориллонит, вне зависимости от предсказаний теоретической модели явления. Весеннее половодье, в рамках ограничений классической механики, упруго поручает пирокластический квант. Преамбула сжимает комплекс агрессивности. Художественное восприятие, в первом приближении, готично стабилизирует ритм, а высоко в горах встречаются очень редкие и красивые цветы – эдельвейсы. Осушение, в случае использования адаптивно-ландшафтных систем земледелия, опротестовано.",
+    "publish": "2025-05-11T22:05:15Z",
+    "created": "2025-05-11T22:05:34.383Z",
+    "updated": "2025-05-18T14:49:55.934Z",
+    "status": "PB",
+    "slug": "tema-gravitacionnyj-platezhnyj-dokument-v-xxi-veke"
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 12,
+  "fields": {
+    "title": "Use markdown",
+    "author": 1,
+    "body": "This is a post formatted with markdown\r\n\r\n--------------------------------------\r\n\r\n*This is emphasized* and **this is more emphasized**.\r\n\r\nHere is a list:\r\n\r\n* One\r\n\r\n* Two\r\n\r\n* Three\r\n\r\n \r\n\r\nAnd a [link to the Django website](https://www.djangoproject.com/)",
+    "publish": "2025-05-18T20:23:16Z",
+    "created": "2025-05-18T20:23:55.257Z",
+    "updated": "2025-05-18T20:23:55.257Z",
+    "status": "PB",
+    "slug": "use-markdown"
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 1,
+  "fields": {
+    "post": 10,
+    "name": "danila",
+    "email": "morozovdaniel713@gmail.com",
+    "body": "Проверка  (цензурное слово) убрал флажок чтобы не показывать этот комент",
+    "created": "2025-05-12T16:42:25.892Z",
+    "updated": "2025-05-12T16:48:43.071Z",
+    "active": false
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 2,
+  "fields": {
+    "post": 10,
+    "name": "dan",
+    "email": "morozovdaniel713@gmail.com",
+    "body": "Новый коммент",
+    "created": "2025-05-12T16:42:46.337Z",
+    "updated": "2025-05-12T16:42:46.337Z",
+    "active": true
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 3,
+  "fields": {
+    "post": 11,
+    "name": "бобрито",
+    "email": "morozovdaniel713@gmail.com",
+    "body": "add new comment",
+    "created": "2025-05-12T16:47:44.809Z",
+    "updated": "2025-05-12T16:47:44.809Z",
+    "active": true
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 4,
+  "fields": {
+    "post": 7,
+    "name": "undefined",
+    "email": "morozovdaniel713@gmail.com",
+    "body": "comm",
+    "created": "2025-05-18T14:59:09.270Z",
+    "updated": "2025-05-18T14:59:09.270Z",
+    "active": true
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 1,
+  "fields": {
+    "name": "django",
+    "slug": "django"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 2,
+  "fields": {
+    "name": "music",
+    "slug": "music"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 3,
+  "fields": {
+    "name": "info",
+    "slug": "info"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 4,
+  "fields": {
+    "name": "markdown",
+    "slug": "markdown"
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 1,
+  "fields": {
+    "tag": 1,
+    "content_type": 7,
+    "object_id": 1
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 2,
+  "fields": {
+    "tag": 3,
+    "content_type": 7,
+    "object_id": 5
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 3,
+  "fields": {
+    "tag": 2,
+    "content_type": 7,
+    "object_id": 5
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 4,
+  "fields": {
+    "tag": 3,
+    "content_type": 7,
+    "object_id": 11
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 5,
+  "fields": {
+    "tag": 2,
+    "content_type": 7,
+    "object_id": 11
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 6,
+  "fields": {
+    "tag": 3,
+    "content_type": 7,
+    "object_id": 7
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 7,
+  "fields": {
+    "tag": 3,
+    "content_type": 7,
+    "object_id": 1
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 8,
+  "fields": {
+    "tag": 1,
+    "content_type": 7,
+    "object_id": 12
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 9,
+  "fields": {
+    "tag": 3,
+    "content_type": 7,
+    "object_id": 12
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 10,
+  "fields": {
+    "tag": 4,
+    "content_type": 7,
+    "object_id": 12
+  }
+},
+{
+  "model": "sites.site",
+  "pk": 1,
+  "fields": {
+    "domain": "example.com",
+    "name": "example.com"
+  }
+}
+]
