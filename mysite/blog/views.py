@@ -1,12 +1,14 @@
 from django.core.paginator import EmptyPage, PageNotAnInteger, Paginator
 from django.shortcuts import render, get_object_or_404
+from django.contrib.postgres.search import SearchVector, SearchQuery, SearchRank, TrigramSimilarity
 from django.db.models import Count
 from blog.models import Post
+from django.db.models.functions import Greatest
 from taggit.models import Tag
 from django.core.mail import send_mail
 from django.conf import settings
 from django.views.decorators.http import require_POST
-from blog.forms import CommentForm, EmailForm
+from blog.forms import CommentForm, EmailForm, SearchForm
 
 
 
@@ -95,3 +97,32 @@ def post_detail(request, year, month, day, post):
     data = {"post": post, "comments": comments, "form": form, "similar_posts": similar_posts}
 
     return render(request, "blog/post/detail.html", context=data)
+
+
+def post_search(request):
+    form = SearchForm()
+    query = None
+    res = []
+
+    if "query" in request.GET:
+        form = SearchForm(request.GET)
+        if form.is_valid():
+            query = form.cleaned_data['query']
+            search_vector = (
+                SearchVector("title", weight="A", config="russian") +
+                SearchVector("body", weight="B", config="russian")
+            )
+            search_query = SearchQuery(query, config="russian")
+
+            res = Post.published.annotate(
+                rank=SearchRank(search_vector, search_query),
+                similarity=TrigramSimilarity('title', query),
+                relevance=Greatest(
+                    SearchRank(search_vector, search_query),
+                    TrigramSimilarity('title', query)
+                )
+            ).filter(relevance__gt=0.1).order_by("-relevance")
+
+    data = {"form": form, "query": query, "results": res}
+
+    return render(request, "blog/post/search.html", data)
