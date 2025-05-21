@@ -1,7 +1,6 @@
-from logging import config
 from django.core.paginator import EmptyPage, PageNotAnInteger, Paginator
 from django.shortcuts import render, get_object_or_404
-from django.contrib.postgres.search import SearchVector, SearchQuery, SearchRank
+from django.contrib.postgres.search import SearchVector, SearchQuery, SearchRank, TrigramSimilarity
 from django.db.models import Count
 from blog.models import Post
 from taggit.models import Tag
@@ -108,13 +107,9 @@ def post_search(request):
         form = SearchForm(request.GET)
         if form.is_valid():
             query = form.cleaned_data['query']
-            search_vector = SearchVector("title", "body", config="russian")
-            search_query = SearchQuery(query, config="russian")
-
             res = Post.published.annotate(
-                search=search_vector,
-                rank=SearchRank(search_vector, search_query)
-            ).filter(search=search_query).order_by("-rank")
+                similarity=TrigramSimilarity('title', query)
+            ).filter(similarity__gt=0.1).order_by("-similarity")
 
     data = {"form": form, "query": query, "results": res}
 
