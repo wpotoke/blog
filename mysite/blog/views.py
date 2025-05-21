@@ -3,6 +3,7 @@ from django.shortcuts import render, get_object_or_404
 from django.contrib.postgres.search import SearchVector, SearchQuery, SearchRank, TrigramSimilarity
 from django.db.models import Count
 from blog.models import Post
+from django.db.models.functions import Greatest
 from taggit.models import Tag
 from django.core.mail import send_mail
 from django.conf import settings
@@ -107,9 +108,20 @@ def post_search(request):
         form = SearchForm(request.GET)
         if form.is_valid():
             query = form.cleaned_data['query']
+            search_vector = (
+                SearchVector("title", weight="A", config="russian") +
+                SearchVector("body", weight="B", config="russian")
+            )
+            search_query = SearchQuery(query, config="russian")
+
             res = Post.published.annotate(
-                similarity=TrigramSimilarity('title', query)
-            ).filter(similarity__gt=0.1).order_by("-similarity")
+                rank=SearchRank(search_vector, search_query),
+                similarity=TrigramSimilarity('title', query),
+                relevance=Greatest(
+                    SearchRank(search_vector, search_query),
+                    TrigramSimilarity('title', query)
+                )
+            ).filter(relevance__gt=0.1).order_by("-relevance")
 
     data = {"form": form, "query": query, "results": res}
 
