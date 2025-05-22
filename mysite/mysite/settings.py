@@ -13,7 +13,7 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 from pathlib import Path
 import os
 from dotenv import load_dotenv
-from django.conf.global_settings import EMAIL_BACKEND, EMAIL_HOST, EMAIL_HOST_PASSWORD, EMAIL_HOST_USER, EMAIL_PORT, EMAIL_USE_TLS
+from django.conf.global_settings import EMAIL_BACKEND, EMAIL_HOST, EMAIL_HOST_PASSWORD, EMAIL_HOST_USER, EMAIL_PORT, EMAIL_USE_TLS, LOGOUT_REDIRECT_URL
 
 load_dotenv()
 
@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     
     "blog.apps.BlogConfig",
+    "accounts.apps.AccountsConfig",
     "taggit",
     "django.contrib.sites",
     "django.contrib.sitemaps",
@@ -147,3 +148,6 @@ EMAIL_HOST_USER = str(os.getenv("EMAIL_HOST_USER"))
 EMAIL_HOST_PASSWORD = str(os.getenv("EMAIL_HOST_PASSWORD"))
 EMAIL_PORT = str(os.getenv("EMAIL_PORT"))
 EMAIL_USE_TLS = str(os.getenv("EMAIL_USE_TLS"))
+
+LOGIN_REDIRECT_URL  =  "/"
+LOGOUT_REDIRECT_URL = "/"
