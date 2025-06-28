@@ -1,5 +1,5 @@
 from django import forms
-from .models import Comment
+from blog.models import Comment
 
 class SearchForm(forms.Form):
     query = forms.CharField()
