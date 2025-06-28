@@ -28,13 +28,15 @@
     <hr>
     {% if user.is_authenticated %}
         Hi {{ user.username }}!
+        <p><a href="{% url 'accounts:users-profile' %}">My profile</a></p>
         <form action="{% url 'logout' %}" method="post">
             {% csrf_token %}
             <a href="#" onclick="parentNode.submit();">Log Out</a>
         </form>
     {% else %}
         <p>You are not logged in</p>
-        <a href="{% url 'login' %}">Log In</a>
+        <p><a href="{% url 'login' %}">Log In</a></p>
+        <p><a href="{% url 'password_reset' %}">Forgot your password?</a></p>
     {% endif %}
     <hr>
 

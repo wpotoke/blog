@@ -13,7 +13,15 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 from pathlib import Path
 import os
 from dotenv import load_dotenv
-from django.conf.global_settings import EMAIL_BACKEND, EMAIL_HOST, EMAIL_HOST_PASSWORD, EMAIL_HOST_USER, EMAIL_PORT, EMAIL_USE_TLS, LOGOUT_REDIRECT_URL
+from django.conf.global_settings import (
+    EMAIL_BACKEND,
+    EMAIL_HOST,
+    EMAIL_HOST_PASSWORD,
+    EMAIL_HOST_USER,
+    EMAIL_PORT,
+    EMAIL_USE_TLS,
+    LOGOUT_REDIRECT_URL,
+)
 
 load_dotenv()
 
@@ -43,14 +51,34 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    
     "blog.apps.BlogConfig",
     "accounts.apps.AccountsConfig",
     "taggit",
+    "social_django",
     "django.contrib.sites",
     "django.contrib.sitemaps",
     "django.contrib.postgres",
+    "blog_api.apps.BlogApiConfig",
+    "rest_framework",
+    "django_filters",
+    "rest_framework.authtoken",
+    "drf_spectacular",
 ]
+
+REST_FRAMEWORK = {
+    "DEFAULT_PERMISSION_CLASSES": [
+        "rest_framework.permissions.IsAuthenticated",
+    ],
+    "DEFAULT_FILTER_BACKENDS": ["django_filters.rest_framework.DjangoFilterBackend"],
+    "DEFAULT_PAGINATION_CLASS": "rest_framework.pagination.LimitOffsetPagination",
+    "PAGE_SIZE": 3,
+    "DEFAULT_AUTHENTICATION_CLASSES": (
+        # "rest_framework.authentication.BasicAuthentication",
+        "rest_framework.authentication.SessionAuthentication",
+        "rest_framework.authentication.TokenAuthentication",
+    ),
+    "DEFAULT_SCHEMA_CLASS": "drf_spectacular.openapi.AutoSchema",
+}
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
@@ -61,6 +89,13 @@ MIDDLEWARE = [
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
+
+SPECTACULAR_SETTINGS = {
+    "TITLE": "Blog API Project",
+    "DESCRIPTION": "A sample blog to learn about DRF",
+    "VERSION": "1.0.0",
+    # OTHER SETTINGS
+}
 
 ROOT_URLCONF = "mysite.urls"
 
@@ -75,10 +110,24 @@ TEMPLATES = [
                 "django.template.context_processors.request",
                 "django.contrib.auth.context_processors.auth",
                 "django.contrib.messages.context_processors.messages",
+                "social_django.context_processors.backends",
+                "social_django.context_processors.login_redirect",
             ],
         },
     },
 ]
+
+AUTHENTICATION_BACKENDS = [
+    "social_core.backends.github.GithubOAuth2",
+    "social_core.backends.google.GoogleOAuth2",
+    "django.contrib.auth.backends.ModelBackend",
+]
+
+SOCIAL_AUTH_GITHUB_KEY = str(os.getenv("SOCIAL_AUTH_GITHUB_KEY"))
+SOCIAL_AUTH_GITHUB_SECRET = str(os.getenv("SOCIAL_AUTH_GITHUB_SECRET"))
+SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = str(os.getenv("SOCIAL_AUTH_GOOGLE_OAUTH2_KEY"))
+SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = str(os.getenv("SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET"))
+
 
 WSGI_APPLICATION = "mysite.wsgi.application"
 
@@ -94,7 +143,6 @@ DATABASES = {
         "PASSWORD": str(os.getenv("PASSWORD")),
         "HOST": str(os.getenv("HOST")),
         "PORT": str(os.getenv("PORT")),
-
     }
 }
 
@@ -135,6 +183,8 @@ USE_TZ = True
 
 STATIC_URL = "static/"
 
+SESSION_COOKIE_AGE = 60 * 60 * 24 * 30
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
@@ -143,11 +193,15 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
 
 # Конфигурация сервера электронной почты
-EMAIL_HOST =str(os.getenv("EMAIL_HOST"))
+EMAIL_HOST = str(os.getenv("EMAIL_HOST"))
 EMAIL_HOST_USER = str(os.getenv("EMAIL_HOST_USER"))
 EMAIL_HOST_PASSWORD = str(os.getenv("EMAIL_HOST_PASSWORD"))
 EMAIL_PORT = str(os.getenv("EMAIL_PORT"))
 EMAIL_USE_TLS = str(os.getenv("EMAIL_USE_TLS"))
 
-LOGIN_REDIRECT_URL  =  "/"
-LOGOUT_REDIRECT_URL = "/"
+LOGIN_URL = "/accounts/login/"
+
+LOGIN_REDIRECT_URL = "/"
+
+MEDIA_ROOT = BASE_DIR / "media"
+MEDIA_URL = "/media/"

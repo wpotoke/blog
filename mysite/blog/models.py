@@ -70,3 +70,6 @@ class Comment(models.Model):
 
     def __str__(self) -> str:
         return f'Comment by {self.name} on {self.post}'
+
+    def get_absolute_url(self):
+        return reverse("blog:post_comment", args=[self.id])
